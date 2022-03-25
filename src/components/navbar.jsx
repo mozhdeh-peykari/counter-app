@@ -1,12 +1,14 @@
 import React from 'react';
 
-const Navbar = (props) => {
+const Navbar = ({totalCounters}) => {
+  console.log("Navbar - Rendered");
+
     return (
     <nav className="navbar navbar-light bg-light">
         <div className="container-fluid">
             <a className="navbar-brand" href="#">
                 <span className='badge badge-fill badge-secondary'>
-                    {props.totalCounters}
+                    {totalCounters}
                 </span>
             </a>
         </div>
